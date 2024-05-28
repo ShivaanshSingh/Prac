@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Major+Mono+Display&family=Quicksand:wght@300..700&display=swap');
+
+
+
+body{
+    /*background-color: #d5e7f7;*/
+    background-image: url("wall.jpg");
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    display: flex;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+  
+
+   
+}
+.text{
+    display: flex;
+
+}
+body h2{
+    font-family: "Inconsolata";
+        position: relative;
+        margin-right: 40px;
+        z-index: 2;
+        animation: slide 8s linear infinite;
+        margin-bottom: 700px;
+        margin-top: 0px;
+        color: #ffffff;
+        text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.179);
+        flex: 0 0 auto;
+        font-size: 75px;
+        text-align: center;
+        padding-top: 50px;
+  
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+.container{
+    border-radius: 20px;
+    background-color: #091B31;
+    padding: 60px;
+    display: flex;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+
+.container h1{
+    font-weight:300; 
+    margin-bottom: 30%;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    font-family: "Quicksand";
+    color: rgb(255, 255, 255);
+    
+}
+
+.button{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Inconsolata";
+    color: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #383261;
+    border-radius: 200px;
+    transition: transform 0.3s ease;
+}
+
+
+.button img{
+        width: 50px;
+       }
+
+       .button:hover{
+    transform: scale(1.2) ;
+    background-color: #b863b9;
+    
+}
+
